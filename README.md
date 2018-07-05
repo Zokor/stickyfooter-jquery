@@ -1,6 +1,7 @@
 # stickyfooter-jquery
 Calculate when to put the footer sticky or not depending on the Header, Main and Footer height
 
+```
 function stickyFooter() {
 
     if (($(window).outerHeight() - $('header').outerHeight() - $('main').outerHeight() - $('footer').outerHeight()) > 0) {
@@ -18,4 +19,5 @@ $(window).on('load', function () {
 $(window).resize(function () {
     stickyFooter();
 });
+```
 
